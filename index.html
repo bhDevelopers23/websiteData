@@ -3,232 +3,357 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./stylesheet/blogStyle.css">
-    <title>Perfumes Informational Blogger</title>
+    <link rel="stylesheet" href="./styleSheets/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <title>bhDevelopers</title>
 </head>
 <body>
     <header>
-        <a href="#" class="logo">PerfumesBlogger</a>
-        <div class="menuToggle"></div>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light px-4 fixed-top">
+        <div class="container-fluid">
+          <a class="navbar-brand fs-2 shadow-sm" href="https://baharhussain.netlify.app/">bh<span class="text-success"><b>Devlopers</b></span></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0 fs-5 text-center">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#about">About Us</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Our Services
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#services">DevOps Engineering</a></li>
+                  <li><a class="dropdown-item" href="#services">Networks Design</a></li>
+                  <li><a class="dropdown-item" href="#services">Web Design & Developments</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#services">Graphics Design</a></li>
+                  <li><a class="dropdown-item" href="#services">Video Editing</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#services">Professional Trainings</a></li>
+                  <li><a class="dropdown-item" href="#services">Technical Supports</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#ourTeam">Our Team</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contact">Contact Us</a>
+              </li>
+            </ul>
+            
+          </div>
+        </div>
+      </nav>
+     
+    <!-- Slider Code-->
+    <div id="carouselExampleIndicators" class="carousel slide shadow-sm" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="./images/site1.png" class="d-block w-100" alt="Intro Site">
+          </div>
+          <div class="carousel-item">
+            <img src="./images/site2.png" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="./images/site3.png" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="./images/site4.png" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="./images/site5.png" class="d-block w-100" alt="...">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    <!-- Slider Code End-->
+  
+    
     </header>
-    <ul class="navigation">
-        <li><a href="#home" onclick="toggleMenu();">Home</a></li>
-        <li><a href="#about" onclick="toggleMenu();">About</a></li>
-        <li><a href="#post" onclick="toggleMenu();">Posts</a></li>
-        <li><a href="#contact" onclick="toggleMenu();">Contact Us</a></li>
-    </ul>
+    <!-- End of Header-->
 
-    <!-- Banner Code-->
-    <section class="banner" id="home">
-        <img src="./images/background.jpg" alt="BackGround Banner" class="cover">
-        <div class="contentBx">
-            <h1>The Soul of Perfumes</h1>
-            <h3>World Top 10 Costly Perfumes</h3>
-            <a href="#about" class="btn">About Us</a>
-        </div>
-    </section>
-    <!-- End of Banner Code-->
-    <!-- Start of About US Code-->
-    <section class="about" id="about">
-        <div class="title">
-            <h2>About SHUMUKH</h2>
-        </div>
-        <div class="contentBx">
-            <div class="content">
-                <p>The Spirit of Dubai Parfums by Nabeel, an ultra-luxury fragrance brand from the UAE has unveiled SHUMUKH, the world’s most expensive and luxurious unisex perfume, valued at AED 4.752 million /US $ 1.295 million. Paying tribute to “The Spirit of Dubai”, SHUMUKH, which in Arabic translates to ‘deserving the highest’, unites the art of jewellery and perfumery to create a one-of-a kind masterpiece that tells the tale of the great Emirate through seven core design elements. Set with IGI and GIA certified 3,571 sparkling diamonds (totalling 38.55 carats), topaz, pearls, 18 karat gold 2479.26 grams and 5892.88 grams pure silver, SHUMUKH is the epitome of luxury.<br><br>SHUMUKH – an unrivalled tribute to Dubai in the world of fragrance, beautifully showcases the seven key elements of pearl diving (Durra), falconry (Baz), Arabian horses (Abjar), roses (Narjesi), luxury (Haibah), Arabian hospitality (Diwan), and Dubai’s stature as a ‘city of the future’ (Aamal), all of which have been intricately modelled in gold and silver, and ornamented with the highest quality diamonds and precious stones, all of which can be customised.<br><br>Taking over three years and 494 perfume trials to formulate, SHUMUKH holds 3 liters of perfume and is comprised of the finest natural ingredients sourced from the furthest corners of the globe, culminating in a scent that is as unforgettable as it is mesmerising with notes of amber, sandalwood, musk, rare pure Indian agarwood, pure Turkish rose, patchouli ylang-ylang and frankincense that are estimated to last on the skin for more than 12 hours.
+    <section class="about my-5" id="about">
+        <div class="container fs-5">
+            <h1 class="text-center"  data-aos="fade-up" data-aos-offset="200"><span class="text-success fs-1 shadow-sm">About Us</span></h1>
+            <hr / class="w-25 m-auto">
+            <p class="my-3 text-center">
+                As an experienced and driven professional with comprehensive expertise in directing the implementation of a wide variety of complex IT systems and solutions, We are confident that we would significantly contribute to the objectives of your company.
+                Our Team career accomplishments consist of more than 8 years of experience implementing technology projects, developing product requirements, Graphics Desing & Video Editing, Network Support and analyzing support strategies and processes to facilitate improved operations and efficiency. 
+                Our team communication and problem-solving skills allow us to excel in driving teams through all facets of project life cycles and realizing improved efficiency and productivity.
+                Consider the following highlights of our team qualifications, experiences and development for any Kinds of Developments.
 
-                SHUMUKH is conceptualised in the UAE by Mr. Asghar Adam Ali (Al Attar), Chairman and Master perfumer at Nabeel Perfumes Group of Companies, and executed by renowned artisans and master craftsmen from Italy, France and Switzerland - including the recipients of the designation of Meilleurs Ouvriers de France ("Best Craftsman of France").</p>
-            </div>
-            <div class="content">
-                <div class="imgBx">
-                    <img src="./images/1.jpg" alt="" class="cover">
+            </p>
+
+            <!--Intro Part of MySelf-->
+            <div class="row my-8">
+                <div class="col-sm-12 col-md-6 col-lg-6 col-12 my-3">
+                    <h2 class="text-success shadow-sm text-center" data-aos="zoom-in" data-aos-offset="200" >What do you want to know About?</h2>
+                    <p class="para">29 years of Teaching & Management, Network Administrator, System Engineer, Manager IT, Graphics & Video Editor, Web Designing & Developer, DevOps Engineer Experience and an expert individual having extensive and hands-on knowledge in the field of Information Technology as well as Computer Sciences.</p>
+                    <a href="https://baharhussain.netlify.app/"><button type="button" class="btn btn-light my-2">More About Me</button></a>
+                    <div class="accordion my-3" id="accordionExample">
+                        <div class="accordion-item">
+                          <h2 class="accordion-header" id="headingOne">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                              Qualifications
+                            </button>
+                          </h2>
+                          <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                              <strong>Master in Computer Science</strong>, MCSE, FSWD(MERN), DevOps Engineering, CCNA (R & S), CCNP (R & S), RHCSA, RHCE, FSWD, PGD-CS, DAT, DCS, CCNP (Security), DCG, DMD, Certified in VMware (Virtualization & Mobility), Data Backup & Security, Specialist in Networks and Multimedia Graphics 
+                            </div>
+                          </div>
+                        </div>
+                        <div class="accordion-item">
+                          <h2 class="accordion-header" id="headingTwo">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                              Projects
+                            </button>
+                          </h2>
+                          <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                              <strong>Our Team Projects Live Links</strong> 
+                              <ul>
+                                <Li><a href="https://baharhussain.netlify.app/">https://baharhussain.netlify.app/</a></Li>
+                                <Li>https://bhrestexample.netlify.app/</Li>
+                                <Li>https://bhtoursexample.netlify.app/</Li>
+                                <Li>hhttps://bhcoffhunt.netlify.app/</Li>
+
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="accordion-item">
+                          <h2 class="accordion-header" id="headingThree">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                              Hobbies
+                            </button>
+                          </h2>
+                          <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                              <strong>Our Team.</strong> Always play with New Technologies & Trainings to the Market Professional
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                </div>
+
+                <div class="col-sm-12 col-md-6 col-lg-6 col-12 my-3 m-auto text-center" id="imgBox">
+                    <img src="./images/bhpic.jpg" class="">
                 </div>
             </div>
+            <!--End of Intro Part-->
         </div>
+        
     </section>
 
-
-    <!-- End of About Us Code-->
-    <!-- Latest Bloger Posts Code Start -->
-    <section class="post" id="post">
-        <div class="title">
-            <h2>Latest Perfumes Posts</h2>
-            <p>‘Perfume is the invisible, unforgettable, fashionable accessory that announces your arrival and prolongs your departure,’ quipped Coco Chanel. This quotation by the late grande dame of fashion encapsulates the importance of a perfume to its wearer. Every year, purveyors of perfume strive to create more ambitious and unique fragrances, which will linger in hearts, minds (and noses) long after the wearer has left the room. But amongst the huge number of luxury perfumes on offer, some are a cut above the rest, both in terms of the quality of their fragrance and in terms of price point.
-
-            These ultra luxury perfumes are like artworks, both in terms of their intricate play of notes and their high calibre packaging and bottles. Top of the list of most expensive fragrances is Shumukh, created by Nabeel. Launched in 2019, this musky scent made with rose and sandalwood costs more than €1.5 million euros. Its bottle, made with 3,500 diamonds and pearls, 2.5kg of 18 karat gold and 5.9kg of silver, is a sparkling objet d’art and the armour a truly exceptional perfume.</p>
-        </div>
-        <div class="contentBx">
-                <div class="postColumn">
-                    <div class="postBox">
-                        <div class="imgBx">
-                            <img src="./images/3.jpeg" class="cover" alt="Posts Images">
-                        </div>
-                        <div class="textBx">
-                            <h3><b>Number:2</b>DKNY Golden Delicious by Donna Karan is a Floral Woody Musk fragrance for women. DKNY Golden Delicious was launched in 2010. Top notes are Red Apple, African Orange Flower and Plum; middle notes are Lily-of-the-Valley, Lily, Orchid and Rose; base notes are Sandalwood, Musk and Teak Wood.</h3>
-                            <a href="#" class="btn"> Read More</a>
-                        </div>
-                    </div>
-
-                    <div class="postBox">
-                        <div class="imgBx">
-                            <img src="./images/2.jpg" class="cover" alt="Posts Images">
-                        </div>
-                        <div class="textBx">
-                            <h3><B>Number:3</B> Bulgari ‘Opera Prima': world's most expensive perfume sells for €200,000
-                                Thursday, January 25, Bulgari announced that its luxury fragrance "Opera Prima" -- the most expensive scent in the history of perfume -- has now been sold. The precious bottle, finished with gold leaf and gems including diamonds, was bought by a private client for the princely sum of €200,000.</h3>
-                            <a href="#" class="btn"> Read More</a>
-                        </div>
-                    </div>
-
-                    <div class="postBox">
-                        <div class="imgBx">
-                            <img src="./images/4.jpeg" class="cover" alt="Posts Images">
-                        </div>
-                        <div class="textBx">
-                            <h3><b>Number: 4</b>
-                                In 2006, Clive Christian decided that for his very special customers he would offer 500ml of absolute perfume oil in the most exquisite bottle that he and the master glass blowers at the grand old French rm of Baccarat could devise.
-                                
-                                The bottle itself is of nest polished crystal and in the 18 carat gold collar, there nestles a five carat white diamond.
-                                
-                                So precious is the bottle that just ten of them were made. Seven were snapped up by private collectors and the remaining three tour the world as part of Clive Christian’s special collection.
-                                
-                                As for the perfume itself, all Clive Christian’s fans know that he considers his No.1 to be the best of the best and he calls it “the perfume of his heart”. There is no greater tribute.</h3>
-                            <a href="#" class="btn"> Read More</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="postColumn">
-                    <div class="postBox extraHeight">
-                        <div class="imgBx">
-                            <img src="./images/5.jpeg" class="cover" alt="Posts Images">
-                        </div>
-                        <div class="textBx">
-                            <h3><b>Number: 5</b>Parfum VI by Gianni Vive Sulman. (c) Gianni Vive Sulman. Parfum VI by ... Parfum VI by Gianni Vive Sulman: $89,000; 1 million, LUXE edition by</h3>
-                            <a href="#" class="btn"> Read More</a>
-                        </div>
-                    </div>
-
-                    <div class="postBox">
-                        <div class="imgBx">
-                            <img src="./images/6.jpeg" class="cover" alt="Posts Images">
-                        </div>
-                        <div class="textBx">
-                            <h3><b>Number:6 </b>Paco Rabanne 1 Million EDT Men 100ml is an exquisite scent that blends notes of spicy cinnamon, grapefruit, and rose. Luxurious leather and subtle amber undertones create an opulent, sophisticated fragrance that exudes class. The 100ml bottle offers long-lasting use so you can enjoy its unique scent for days.</h3>
-                            <a href="#" class="btn"> Read More</a>
-                        </div>
-                    </div>
-
-                    <div class="postBox">
-                        <div class="imgBx">
-                            <img src="./images/7.jpg" class="cover" alt="Posts Images">
-                        </div>
-                        <div class="textBx">
-                            <h3><b>Number:7 </b>Baccarat Les Larmes Sacrees de Thebes – $6,800 per ounce
-                                Its name means “Sacred Tears of Thebes”. The designer of the perfume is Christine Nagel. For that price, you will receive a symphony of myrrh, frankincense, amber, jasmine, geranium, ylang-ylang, cardamom, basil, myrtle, sandalwood and musk – all housed in a handmade bottle shaped like a pyramid. You can find it at Harrods in London in tiny containers of 0.25 oz at a price of $1,700 per bottle.</h3>
-                            <a href="#" class="btn"> Read More</a>
-                        </div>
-                    </div>
-                    
-                </div>
-
-                <div class="postColumn">
-                    <div class="postBox">
-                        <div class="imgBx">
-                            <img src="./images/8.jpg" class="cover" alt="Posts Images">
-                        </div>
-                        <div class="textBx">
-                            <h3><b>Number:8 </b>Chanel No 5 Parfum Baccarat Grand Extrait by Chanel is a Floral Aldehyde fragrance for women. Chanel No 5 Parfum Baccarat Grand Extrait was launched in 2021. The nose behind this fragrance is Jacques Polge. Top notes are Aldehydes, Ylang-Ylang, Neroli, Bergamot and Lemon; middle notes are Iris, Orris, Jasmine, Rose and Lily-of-the-Valley; base notes are Civet, Sandalwood, Moss, Vetiver, Patchouli, Amber, Vanilla and Musk.</h3>
-                            <a href="#" class="btn"> Read More</a>
-                        </div>
-                    </div>
-
-                    <div class="postBox">
-                        <div class="imgBx">
-                            <img src="./images/9.jpg" class="cover" alt="Posts Images">
-                        </div>
-                        <div class="textBx">
-                            <h3><b>Number:9 s</b>I love cloves. And today I find myself really craving them. Maybe it was writing about Nuit De Noel the other day, maybe it’s the colder weather, or perhaps it’s because my chest feels a bit vulnerable today, but the searing dignity of this most aloof of spices is what I am feeling. So I am wearing some of finest cloves in my possession: Diptyque’s L’Eau de L’Eau; Caron Bellodgia parfum, and Floris’s gorgeously carnationesque Malmaison, the latter two adulterated by me to make them more spicy: two drops of ylang ylang, black pepper and clove essential oil in each, and boo ha we have what we want (I know it sounds heretical, but the Bellodgia is just too musky otherwise, and the Malmaison too polite and trust me, my sharper remix works nicely).</h3>
-                            <a href="#" class="btn"> Read More</a>
-                        </div>
-                    </div>
-
-                    <div class="postBox extraHeights">
-                        <div class="imgBx">
-                            <img src="./images/10.jpg" class="cover" alt="Posts Images">
-                        </div>
-                        <div class="textBx">
-                            <h3><b>Number:10 </b>The Fragrance industry has been fighting for decades a battle between the power of Marketing and the uniqueness of true creations. In difficult times, only great fragrances remain and among the icons of perfumery history there is Joy by Jean Patou.
-                                In 1912 he opened a small dressmaking salon called “Maison Parry”. His entire 1914 collection was purchased by a single American buyer. At that time, Henri During the First World War, Patou shut downs his business and reopen it in 1919. He is known for inventing the inventor of the knitted swimwear and the tennis skirt.</h3>
-                            <a href="#" class="btn"> Read More</a>
-                        </div>
-                    </div>
-                    
-                </div>
-        </div>
-        <div class="title">
-            <a href="#" class="btn mgt60">Load More</a>
-        </div>
-    </section>
-    <!-- Latest Bloger Posts Code End -->
-
-    <!-- Contact Us Code Start -->
-    <section class="contact" id="contact">
-        <div class="title">
-            <h2>Get in Touch</h2>
-            <p>Let’s face it – together with all accessories, perfumes signify class. The more money you can spend on perfume, the better you look (financially speaking). We will take you on an incredible journey of the most expensive perfumes in the world. No, we are not talking about something you can buy from a regular beauty store.</p>
-        </div>
-        <div class="contactForm">
+    <!-- Services Code Start-->
+    <section class="services py-5 bg-light" id="services">
+        <div class="container">
+            <div class="text-center my-4">
+                <h1 class="text-center"><span class="text-success fs-1 shadow-sm">Our Services</span></h1>
+                <hr  class="w-25 m-auto">
+            </div>
+            <!-- Cards Row 1-->
             <div class="row">
-                <input type="text" name="" id="" placeholder="First Name">
-                <input type="text" name="" id="" placeholder="Last Name">
+                <div class="col-sm-12 col-md-4 col-lg-4 col-12">
+                    <div class="card" style="width: 20rem;">
+                        <img src="./images/devOps.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <p class="card-text">Turn to bhDevelopers to implement DevOps best practices, including integration with cloud, continuous integration and continuous delivery (CI/CD), GitOps, containerization, DevSecOps, AI/ML, and AI Ops, as well as a host of other services. Automate and coordinate software development life cycle (SDLC) processes like development, security, testing, deployment with <b>bhDevelopers</b>bhDevelopers, a DevOps solutions provider. </p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-sm-12 col-md-4 col-lg-4 col-12">
+                    <div class="card" style="width: 20rem;">
+                        <img src="./images/networking.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <p class="card-text"><b>bhDevelopers</b> provides networking service for low- or high-level application that enables the network to perform more than basic functions. Some examples of networking services include NTP, DNS, DHCP, VoIP, File and Directory, VPN, Desktop Troubleshooting, Hardware Sharing, Email, and Website Hosting.Also Provides the Operating System <b>(Micosoft Windows, Red Hat Linux)</b></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-4 col-lg-4 col-12">
+                    <div class="card" style="width: 20rem;">
+                        <img src="./images/graphicsServices.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <p class="card-text"><b>bhDevelopers</b> Need to make a lasting impression? The right combination of colors, shapes and words will define your brand. Get the perfect logo and ensure your branding hits the spot with these services.Really need some design inspiration? Someone who can use their creative skills to make a design that will really pop? These graphic design services may be just what you're looking for.</p>
+                        </div>
+                    </div>    
+                </div>
+            </div>
+            <!-- End of Cards Row 1-->
+            <!-- Cards Row 2-->
+            <div class="row mt-4" data-aos="zoom-in-up" data-aos-offset="200">
+                <div class="col-sm-12 col-md-4 col-lg-4 col-12">
+                    <div class="card" style="width: 20rem;">
+                        <img src="./images/webDes.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <p class="card-text"><b>Web Design & Development</b> services help create all types of web-based software and ensure great experience for web users. Different types of web solutions may seem similar from the outside but we approach them differently and know what factors are winning in each case. </p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-sm-12 col-md-4 col-lg-4 col-12">
+                    <div class="card" style="width: 20rem;">
+                        <img src="./images/diplomaC.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <p class="card-text"><b>bhDevelopers</b> provides different type of Professional Computer Course Training and developing a Professional's according to market requirements. And also provides interships programs in different Organizations with signed MOU's. Visit us for safe your best future in Information Technology.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-4 col-lg-4 col-12">
+                    <div class="card" style="width: 20rem;">
+                        <img src="./images/Clang.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <p class="card-text"><b>Programming Languages</b> are one kind of computer language, and are used in computer programming to implement algorithms. Most programming languages consist of instructions for computers. Computer programming languages allow us to give instructions to a computer in a language the computer understands. </p>
+                        </div>
+                    </div>    
+                </div>
+            </div>
+            <!-- End of Cards Row 2-->
+        </div>
+    </section>
+    <!-- Services Code End-->
+
+    <!--Our Team Start Code-->
+    <section class="team my-5 text-center" id="ourTeam">
+        <div class="container">
+            <div class="text-center my-4">
+                <h1 class="text-center"><span class="text-success fs-1 shadow-sm">Our Team</span></h1>
+                <hr  class="w-25 m-auto">
             </div>
             <div class="row">
-                <input type="email" name="" id="" placeholder="Email address">
-                <input type="text" name="" id="" placeholder="Mobile No.">
+                <div class="col-sm-12 col-md-3 col-lg-3 col-12">
+                    <div class="card">
+                        <div class="card-body" data-aos="fade-up" data-aos-offset="200">
+                            <img src="./images/BaharHussain.jpg" class="img-fluid  rounded-circle border border-success p-2">
+                          <p class="card-text mt-3"><b>Bahar Hussain</b></p>
+                          <p class="card-text mt-3">M.C.S, DevOps, FSWD</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-3 col-lg-3 col-12">
+                    <div class="card">
+                        <div class="card-body" data-aos="zoom-in" data-aos-offset="200">
+                            <img src="./images/Erum_Bh.jpg" class="img-fluid  rounded-circle border border-success p-2">
+                          <p class="card-text mt-3"><b>Erum Bahar</b></p>
+                          <p class="card-text mt-3">M.A, PGD-CS, FSWD</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-3 col-lg-3 col-12">
+                    <div class="card">
+                        <div class="card-body" data-aos="zoom-in" data-aos-offset="200">
+                            <img src="./images/Iram_Tariq.jpg" class="img-fluid  rounded-circle border border-success p-2">
+                          <p class="card-text mt-3"><b>Iram Tariq</b></p>
+                          <p class="card-text mt-3">M.C.S,Digital Marketing, FSWD</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-3 col-lg-3 col-12">
+                    <div class="card">
+                        <div class="card-body" data-aos="fade-up" data-aos-offset="200">
+                            <img src="./images/Shagufta_Pic.jpeg" class="img-fluid  rounded-circle border border-success p-2">
+                          <p class="card-text mt-3"><b>Shagufta Shaheen</b></p>
+                          <p class="card-text mt-3">M.I.T,FSWD (PHP,WordPress)</p>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="row2">
-                <textarea placeholder="Type Your Message"></textarea>
+        </div>
+    </section>
+    <!--Our Team Edn Code-->
+    <!--Contact Us Code Start-->
+    <section class="contactus py-5" id="contact">
+        <div class="container">
+            <div class="text-center my-4">
+                <h1 class="text-center"><span class="text-success fs-1 shadow-sm">Contact Us</span></h1>
+                <hr  class="w-25 m-auto">
             </div>
-            <div class="row2">
-                <input type="submit" value="Send" class="btn">
+            <div class="row">
+                <div class="col-sm-12 col-md-6 col-lg-6 col-12">
+                    <form class="row g-3" action="https://formsubmit.co/eeba0cdc0a14c5436d0c501b88c7063f" method="POST">
+                        <div class="col-md-6">
+                          <label for="inputEmail4" class="form-label">Name</label>
+                          <input type="text" name="name" class="form-control" id="inputtext">
+                        </div>
+                        <div class="col-md-6">
+                          <label for="inputPassword4" class="form-label">Email</label>
+                          <input type="email" name="email"class="form-control" id="inputEmail4">
+                        </div>
+                        <div class="col-12">
+                          <label for="inputAddress" class="form-label">Address</label>
+                          <input type="text" name="address"class="form-control" id="inputAddress" placeholder="1234 Main St">
+                        </div>
+                        <div class="col-md-6">
+                          <label for="inputCity" class="form-label">City</label>
+                          <input type="text" name="city"class="form-control" id="inputCity">
+                        </div>
+                        <div class="col-md-4">
+                          <label for="inputState" class="form-label">Province</label>
+                          <select id="inputState" name="prov" class="form-select">
+                            <option selected>Choose...</option>
+                            <option>Punjab</option>
+                            <option>Sindh</option>
+                            <option>Balochistan</option>
+                            <option>NWFP</option>
+                          </select>
+                        </div>
+                        <div class="col-md-2">
+                          <label for="inputZip" class="form-label">Zip</label>
+                          <input type="text" name="zipcode"class="form-control" id="inputZip">
+                        </div>
+                        <div class="col-12">
+                            <label for="">Message:</label>
+                            <textarea cols="85" name="message"rows="10" placeholder="Type Your Message"></textarea>
+                        </div>
+                          <div class="col-12">
+                          <button type="submit" class="btn btn-primary">Send</button>
+                        </div>
+                      </form>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-6 col-12 m-auto text-center">
+                    <img src="./images/BaharHussainPic.jpg" class="img-fluid rounded-circle border border-success p-2">
+                </div>
             </div>
         </div>
 
     </section>
-    <!-- Contact Us Code End -->
-    <!-- Footer Code-->
+    <!--Contact Us Code End-->
     <footer>
-        <a href="#" class="logo">PerfumesBlogger</a>
-        <ul class="footerMenu">
-            <li><a href="#home" onclick="toggleMenu();">Home</a></li>
-            <li><a href="#about" onclick="toggleMenu();">About</a></li>
-            <li><a href="#post" onclick="toggleMenu();">Posts</a></li>
-            <li><a href="#contact" onclick="toggleMenu();">Contact Us</a></li>
-        </ul>
-        <p class="copyrightText"> Copyright 2023 bhDevelopers. All Rights Reserved.</p>
+        <div class="container-fluid bg-success text-white p-2 text-center fs-5">© Copyright bhDevelopers. All Rights Reserved</div>
     </footer>
 
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
 
+
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
-        const menuToggle = document.querySelector('.menuToggle');
-        const navigation = document.querySelector('.navigation');
-        menuToggle.onclick = function(){
-            menuToggle.classList.toggle('active');
-            navigation.classList.toggle('active');
-        }
-
-        window.addEventListener('scroll', function(){
-            const header = document.querySelector('header');
-            header.classList.toggle('sticky', window.scrollY > 0);
-
-
-        })
-
-        function toggleMenu(){
-            menuToggle.classList.remove('active');
-            navigation.classList.remove('active');
-        }
+      AOS.init();
     </script>
 </body>
 </html>

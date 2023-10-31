@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;600;800&family=Montserrat:wght@400;500;700&family=Orbitron:wght@900&family=Playfair+Display:ital,wght@0,500;0,800;1,400;1,500;1,800&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;1,500&family=Roboto+Mono:wght@300;400;500;600;700&family=Roboto:ital,wght@0,400;1,300;1,500&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+body
+{
+    overflow-x: hidden;
+    font-family: 'Karla', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Orbitron', sans-serif;
+    font-family: 'Playfair Display', serif;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto Mono', monospace;
+}
+.carousel-item img
+{
+    width: 100%;
+    height: 80vh;
+
+}
+
+.para
+{
+    text-align: justify;
+}
+#imgBox img
+{
+    height: 80%;
+    border-radius:20px;
+    border: 5px solid rgb(4, 0, 0);
+    box-shadow: 5px 5px 3px rgba(0,0,0,0.4);
+    
+}
+.card-body img{
+    min-width: 50%;
+    max-height: 200px;
+}
+.row textarea
+{
+    resize: none;
+    height: 200px;
+}
